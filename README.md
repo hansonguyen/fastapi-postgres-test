@@ -1,5 +1,13 @@
 # FastAPI + PostgreSQL Docker Setup
 
+This repository is a monorepo setup that contains a base API with FastAPI and connects to a PostgreSQL database. Everything is setup to be able to easily run containerized instances of the API and database for local development.
+
+### Prerequisites
+
+List of software to be installed:
+- Python
+- Docker Desktop
+
 ### API Setup
 
 Using a virtual environment is recommended for consistent local development.
@@ -47,7 +55,7 @@ After creating the new migration, update the database.
 docker-compose run api alembic upgrade head
 ```
 
-### Database
+### Docker
 
 To be able to run the API and database services, build the containers.
 
