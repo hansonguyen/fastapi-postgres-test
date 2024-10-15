@@ -1,3 +1,7 @@
+"""
+Router that contains all routes with prefix `/authors`.
+"""
+
 from fastapi import APIRouter
 from fastapi_sqlalchemy import db
 from models.db import Author

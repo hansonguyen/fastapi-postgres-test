@@ -1,3 +1,20 @@
+"""
+Database models that are used to query the database or create objects.
+
+Typical usage example:
+
+	from models.db import Book
+    
+    def get_books():
+    	return db.session.query(Book).all()
+
+	def add_book(book: SchemaBook):
+		new_book = Book(title=book.title, author_id=book.author_id)
+		db.session.add(new_book)
+		db.session.commit()
+		return new_book
+"""
+
 from sqlalchemy import Column, DateTime, ForeignKey, Integer, String, UUID
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship

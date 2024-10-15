@@ -1,3 +1,7 @@
+"""
+Router that contains all routes with prefix `/book`.
+"""
+
 from fastapi import APIRouter
 from fastapi_sqlalchemy import db
 from models.db import Book
